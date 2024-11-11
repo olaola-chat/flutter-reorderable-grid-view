@@ -53,7 +53,7 @@ class _MyAppState extends State<MyApp> {
         lockedIndices: [_fruits.length],
         fadeInDuration: const Duration(milliseconds: 1000),
         dragChildBoxDecoration:
-            const BoxDecoration(color: CupertinoColors.transparent),
+            const BoxDecoration(color: Colors.transparent),
         onReorder: (ReorderedListFunction reorderedListFunction) {
           final updatedFruits = reorderedListFunction(
             <String>[..._fruits, 'button'],

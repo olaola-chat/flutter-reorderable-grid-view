@@ -50,6 +50,7 @@ class _ReorderableAnimatedOpacityState extends State<ReorderableAnimatedOpacity>
     // position is calculated. This prevents flickering when the child appears
     // and moves to its new position.
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
       _controller.forward();
     });
   }
